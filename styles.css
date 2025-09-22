@@ -57,6 +57,13 @@ body{
     color: #333;           /* optional: link color */
 }
 
+/* Styling for active link, refer to script.js*/
+.NavBox nav a.active {
+    font-weight: bold;       /* make it bold */
+    
+}
+
+
 .AboutBox { 
     grid-column: 3; 
     grid-row: 1;
