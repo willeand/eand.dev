@@ -158,3 +158,47 @@ body{
     margin-right: 0;     /* removes extra space after last link */
 }
 
+    /* Book icon styling */
+    .book-icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle; /* aligns icon with text */
+    margin-right: 6px;      /* space between icon and text */
+    }
+
+    /* Bookshelf container inside AboutBox (flush left) */
+    .AboutBox .bookshelf {
+    list-style: none;      /* remove bullets */
+    padding-left: 0;       /* remove default ul padding */
+    margin-left: 0;        /* remove default ul margin */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* align items to left */
+    }
+
+    /* Heading styling (flush with navbar) */
+    .AboutBox h3 {
+    margin: 0 0 0.5rem 0;      /* remove top margin, keep bottom spacing */
+    padding-left: 0;           /* flush with list */
+    font-weight: 300;          /* light heading */
+    letter-spacing: 0.5px;
+    font-size: 1.0rem;         /* slightly larger than book names */
+    color: #555;               /* soft black */
+    border-bottom: 1px solid #ccc; /* subtle underline */
+    padding-bottom: 0.25rem;
+    }
+
+    /* List items (book names) */
+    .AboutBox .bookshelf li {
+    display: flex;           /* aligns icon and text */
+    align-items: center;     /* vertically aligns icon with text */
+    margin-bottom: 12px;     /* distance between items */
+    font-size: 1rem;         /* smaller than heading */
+    color: #555;             /* slightly lighter than heading */
+    }
+
+    /* Extra space after last item in each list */
+    .AboutBox .bookshelf li:last-child {
+    margin-bottom: 24px;     /* breathing room before next heading */
+    }
+
